@@ -1,4 +1,4 @@
-import { sum } from './calculator';
+import { sum, minus } from '../calculator';
 describe('Calculator tests', () => {
     it('should return sum correctly', () => {
         expect(sum(2, 3)).toBe(5);
@@ -6,5 +6,9 @@ describe('Calculator tests', () => {
 
     it('should return sum correctly with negative number', () => {
         expect(sum(-2, 3)).toBe(1);
+    });
+
+    it('minus check', () => {
+        expect(minus(4, 5)).toBe(-1);
     });
 });
